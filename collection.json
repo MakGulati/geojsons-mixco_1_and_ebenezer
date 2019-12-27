@@ -1,0 +1,76 @@
+{
+    "id": "mixco_1_and_ebenezer",
+    "stac_version": "0.8.0",
+    "description": "mixco_1_and_ebeneezer Area - Ciudad de Guatemala, Guatemala.",
+    "links": [
+        {
+            "rel": "root",
+            "href": "../../catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "mixco_1_and_ebenezer-imagery.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "mixco_1_and_ebenezer-labels-train.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "mixco_1_and_ebenezer-labels-test.json",
+            "type": "application/json"
+        }
+    ],
+    "extent": {
+        "spatial": {
+          "bbox": [
+              [
+                -90.59050528,
+                14.6171014,
+                -90.58003224,
+                14.62768004
+              ]
+          ]
+        },
+        "temporal": {
+          "interval": [
+              [
+                "2019-08-30T12:00:00+00:00",
+                null
+              ]
+          ]
+        }
+    },
+    "license": "proprietary",
+    "providers": [
+        {
+            "name": "WeRobotics",
+            "roles": [
+                "producer"
+            ],
+            "url": "https://werobotics.org/"
+        },
+        {
+            "name": "DrivenData",
+            "roles": [
+                "host"
+            ],
+            "url": "https://www.drivendata.org/"
+        },
+        {
+            "name": "Azavea",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://www.azavea.com/"
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "type": "Feature",
+    "stac_version": "0.8.0",
+    "id": "mixco_1_and_ebenezer-labels-test",
+    "properties": {
+        "datetime": "2019-08-30T12:00:00+00:00",
+        "label:description": "Building Footprints with Roof Material Classification. Note: Building Footprints are not exhaustively labeled.",
+        "label:type": "vector",
+        "label:property": [
+            "roof_material"
+        ],
+        "label:classes": [
+            {
+              "name": "roof_material",
+              "classes": [
+                  "healthy_metal",
+                  "irregular_metal",
+                  "concrete_cement",
+                  "other",
+                  "incomplete"
+              ]
+          }
+        ],
+        "label:task": ["classification"],
+        "label:method": ["manual"]
+    },
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -90.59050528,
+                    14.6171014
+                ],
+                [
+                    -90.58003224,
+                    14.6171014
+                ],
+                [
+                    -90.58003224,
+                    14.62768004
+                ],
+                [
+                    -90.59050528,
+                    14.62768004
+                ],
+                [
+                    -90.59050528,
+                    14.6171014
+                ]
+            ]
+        ]
+    },
+    "bbox": [
+        -90.59050528,
+        14.6171014,
+        -90.58003224,
+        14.62768004
+    ],
+    "links": [
+        {
+            "rel": "source",
+            "href": "mixco_1_and_ebenezer-imagery.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "../../catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "collection",
+            "href": "collection.json",
+            "type": "application/json"
+        }
+    ],
+    "assets": {
+        "labels": {
+            "href": "test-mixco_1_and_ebenezer.geojson",
+            "type": "application/geo+json"
+        }
+    },
+    "stac_extensions": [
+        "label"
+    ]
+}
